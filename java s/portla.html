@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIUB Student Portal | Mid-Term Project</title>
+</head>
+<body>
+
+    <!-- Header Section (Semantic Tag) -->
+    <header>
+        <h1>American International University-Bangladesh (AIUB)</h1>
+        <h2>Computer Club (ACC) Registration Portal</h2>
+        
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#about">About the Club</a></li>
+                <li><a href="#routine">Class Routine</a></li>
+                <li><a href="#registration">Registration Form</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Section 1: About -->
+        <section id="about">
+            <h3>About AIUB Computer Club</h3>
+            <p>Welcome to the official portal. We focus on <strong>Web Development</strong>, <em>Deep Learning</em>, and advanced technology research.</p>
+            
+            <details>
+                <summary>Click here to view our core activities</summary>
+                <ul>
+                    <li>Organizing Tech Fests</li>
+                    <li>Research and Thesis Assistance</li>
+                    <li>Programming Contests</li>
+                </ul>
+            </details>
+        </section>
+
+        <br>
+
+        <!-- Section 2: Complex Table (Must for Mid-Term) -->
+        <section id="routine">
+            <h3>My Mid-Term Exam Routine</h3>
+            <!-- Using border for visibility since we are not using CSS yet -->
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr bgcolor="lightgray">
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Course Name</th>
+                        <th>Room No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"><strong>Sunday</strong></td>
+                        <td>08:00 AM - 10:00 AM</td>
+                        <td>Web Technologies</td>
+                        <td>DS01</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM - 01:00 PM</td>
+                        <td>Operating System</td>
+                        <td>DS02</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center"><em>--- Lunch Break ---</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tuesday</strong></td>
+                        <td>02:00 PM - 04:00 PM</td>
+                        <td>Artificial Intelligence</td>
+                        <td>DN05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <!-- Section 3: Advanced Form (Crucial for marking) -->
+        <section id="registration">
+            <h3>New Member Registration Form</h3>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal & Academic Information</legend>
+
+                    <!-- Text Input -->
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+                    <!-- ID Input with Pattern (Bonus marks for this!) -->
+                    <label for="aiub_id">AIUB ID:</label>
+                    <input type="text" id="aiub_id" name="aiub_id" placeholder="xx-xxxxx-x" pattern="[0-9]{2}-[0-9]{5}-[1-3]" required><br><br>
+
+                    <!-- Radio Buttons -->
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+
+                    <!-- Dropdown Menu -->
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="CSE">Computer Science (CSE)</option>
+                        <option value="EEE">Electrical Engineering (EEE)</option>
+                        <option value="BBA">Business Admin (BBA)</option>
+                    </select><br><br>
+
+                    <!-- Checkboxes -->
+                    <label>Interested Topics:</label><br>
+                    <input type="checkbox" id="web" name="interest" value="web">
+                    <label for="web">Web Development</label><br>
+                    <input type="checkbox" id="ml" name="interest" value="ml">
+                    <label for="ml">Machine Learning / XAI</label><br>
+                    <input type="checkbox" id="marketing" name="interest" value="marketing">
+                    <label for="marketing">Digital Marketing</label><br><br>
+
+                    <!-- File Upload -->
+                    <label for="cv">Upload CV (PDF):</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf"><br><br>
+
+                    <!-- Textarea -->
+                    <label for="message">Why do you want to join?</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40" placeholder="Write briefly..."></textarea><br><br>
+
+                    <!-- Buttons -->
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Clear Form</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <br>
+
+        <!-- Section 4: Iframe (Embed YouTube or Map) -->
+        <section id="location">
+            <h3>Campus Location</h3>
+            <!-- Embedding Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0980920731056!2d90.42553757597371!3d23.81510308628464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64c103a8093%3A0xd660a4f50365294a!2sAmerican%20International%20University-Bangladesh%20(AIUB)!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Designed for AIUB Mid-Term Project.</p>
+        <p>Contact: <a href="mailto:info@aiub.edu">info@aiub.edu</a></p>
+    </footer>
+
+</body>
+</html>
